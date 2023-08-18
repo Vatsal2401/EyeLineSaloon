@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 import home from "assets/home.jpg";
 import play from "assets/play.png";
-import Navbar from './Navbar';
+import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
 
@@ -10,61 +10,64 @@ function Home() {
   return (
     <Section id="home">
       <Navbar />
-      <motion.div className="home"
-      variants={homeAnimation}
-      transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      <motion.div
+        className="home"
+        variants={homeAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
       >
         <div className="content">
           <div className="title">
-            <h1>Eyeline <br></br>{"  "}Salon</h1>
-          </div>  
+            <h1> Welcome to Eyeline Salon </h1>
+          </div>
           <div className="subTitle">
             <p>
-              At the Beauty Parlour, we believe in beauty with a conscience. 
-              We have created a salon that offers the highest quality hair 
-              services.
-            </p>  
+              Discover the perfect blend of relaxation and beauty at Eyeline
+              Salon. Indulge in our expert services, including waxing,
+              threading, and facials. Step into a world where self-care meets
+              elegance, and let us enhance your natural radiance.
+            </p>
           </div>
           {/* <img src={play} alt="Play Button" /> */}
-        </div>  
+        </div>
       </motion.div>
 
-      <motion.div className="info"
-      variants={homeInfoAnimation}  
-      transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      <motion.div
+        className="info"
+        variants={homeInfoAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
       >
-          <div className="grid">
-            <div className="col">
-                <strong>Salon</strong>
-                <p>Eyeline</p>
-            </div>
-            <div className="col">
-                <strong>Email</strong>
-                <p>eyeline5322a@gmail.com</p>
-            </div> 
-            <div className="col">
-                <strong>Mobile</strong>
-                <p>+1 5144438594</p>
-            </div> 
-            <div className="col">
-                <strong>Address</strong>
-                <p>5322-A Queen Mary,</p>
-                <p>Montréal, QC. H3X 1T7</p>
-            </div> 
-            <div className="col">
-                <strong>Services</strong>
-                <p>Threading</p>
-                <p>Waxing</p>
-                <p>Facials</p>
-            </div> 
-            <div className="col">
-                <strong>Working Hours</strong>
-                <p>Monday to Saturday</p>
-                <p>10:00 to 18:30</p>
-                <p>Sunday</p>
-                <p>12:00 to 17:00</p>
-            </div>   
+        <div className="grid">
+          <div className="col">
+            <strong>Salon</strong>
+            <p>Eyeline</p>
           </div>
+          <div className="col">
+            <strong>Email</strong>
+            <p>eyeline5322a@gmail.com</p>
+          </div>
+          <div className="col">
+            <strong>Mobile</strong>
+            <p>+1 5144438594</p>
+          </div>
+          <div className="col">
+            <strong>Address</strong>
+            <p>5322-A Queen Mary,</p>
+            <p>Montréal, QC. H3X 1T7</p>
+          </div>
+          <div className="col">
+            <strong>Services</strong>
+            <p>Threading</p>
+            <p>Waxing</p>
+            <p>Facials</p>
+          </div>
+          <div className="col">
+            <strong>Working Hours</strong>
+            <p>Monday to Saturday</p>
+            <p>10:00 to 18:30</p>
+            <p>Sunday</p>
+            <p>12:00 to 17:00</p>
+          </div>
+        </div>
       </motion.div>
     </Section>
   );
@@ -75,7 +78,7 @@ const Section = styled.section`
   min-height: 100vh;
   background-size: cover;
   position: relative;
-  .home{
+  .home {
     height: 100%;
     .content {
       display: flex;
@@ -88,7 +91,7 @@ const Section = styled.section`
       padding-left: 18rem;
       .title {
         h1 {
-          font-size: 5rem;
+          font-size: 3rem;
           line-height: 5.3rem;
         }
       }
@@ -136,4 +139,4 @@ const Section = styled.section`
   }
 `;
 
-export default Home
+export default Home;

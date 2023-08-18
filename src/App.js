@@ -1,11 +1,12 @@
-import Blog from 'components/Blog';
+// import Blog from 'components/Blog';
 import Contact from 'components/Contact';
 import Footer from 'components/Footer';
 import Home from 'components/Home';
+import Portfolio from 'components/Portfolio';
 import Pricing from 'components/Pricing';
 import ScrollToTop from 'components/ScrollToTop';
 import Services from 'components/Services';
-import Skills from 'components/Skills';
+// import Skills from 'components/Skills';
 import { motion } from 'framer-motion';
 import React from 'react';
 
@@ -15,13 +16,13 @@ function App() {
       
       <Home />
       <Services />
-      {/* <Portfolio /> */}
+      <Portfolio />
       {/* <Milestones /> */}
       {/* <Blog /> */}
       {/* <Video /> */}
       <Pricing />
       {/* <Testimonials /> */}
-      <Skills />
+      {/* <Skills /> */}
       <Contact />
       <Footer />
       <ScrollToTop />

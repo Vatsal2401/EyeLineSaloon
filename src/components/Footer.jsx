@@ -18,7 +18,7 @@ function Footer() {
         duration: 0.8,
       }}
       >
-        &copy; React Website Transition Animation
+        Copyright &copy; 2023 Eyeline Salon - All Rights Reserved.
       </motion.span>
       <motion.div className="footer__social__icons"
       variants={footerTextAnimation}

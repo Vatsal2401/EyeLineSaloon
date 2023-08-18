@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import loadmore from "assets/loadmore.png";
+// import loadmore from "assets/loadmore.png";
 import portfolio3 from "assets/portfolio3.jpg";
 import portfolio4 from "assets/portfolio4.jpg";
 import portfolio5 from "assets/portfolio5.jpg";
@@ -27,17 +27,16 @@ function Portfolio() {
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-seven grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-eight grid-box"></motion.div>
     </div>
-    <div className="portfolio-more">
+    {/* <div className="portfolio-more">
         <span>Load More</span>
         <img src={loadmore} alt="Load More" />
-    </div>
+    </div> */}
   </Section>
   );
 }
 
 const Section = styled.section`
 min-height: 100vh;
-padding-bottom: 2rem;
 background-color: var(--secondary-color);
 .grid {
   display: grid;

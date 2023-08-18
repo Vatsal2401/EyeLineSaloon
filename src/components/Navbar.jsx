@@ -43,14 +43,14 @@ function Navbar() {
           <li>
             <a href="#services">Services</a>
           </li>
-          {/* <li>
+          <li>
             <a href="#portfolio">Portfolio</a>
+          </li>
+          {/* <li>
+            <a href="#blog">Blog</a>
           </li> */}
           <li>
-            <a href="#blog">Blog</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li>
             <a href="#contact">Contact</a>

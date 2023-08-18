@@ -1,11 +1,24 @@
 import React from 'react';
 import styled from "styled-components";
 import Title from './Title';
+import  { useRef } from 'react';
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { contactAnimation } from "animation";
+import emailjs from 'emailjs-com';
 
 function Contact() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_s7vu4n3', 'template_q0syr2n', form.current, '4jByRmDfitmXRlMnu')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
   const [element, controls] = useScroll();
   return (
     <Section id="contact" ref={element}>
@@ -29,28 +42,30 @@ function Contact() {
             <p>
               If you have any questions simply use the following contact details.
             </p>
-            <p>
-              Business Owners to take their Online Presence 
-              to the next level. We are in the business of Bulk SMS, Digital Marketing.
-            </p>
             <div>
               <p>
-                <strong>Address:</strong> 33, Flyover Road,
+                <strong>Address:</strong> 5322-A Queen Mary,
+Montréal, QC. H3X 1T7
               </p>
               <p>
-                <strong>Email:</strong> blossoms@gmail.com
+                <strong>Email:</strong>  eyeline5322a@gmail.com
               </p>
               <p>
-                <strong>Website:</strong> www.blossoms.com
+                <strong>Website:</strong> www.eyelinesolon.com
+              </p>
+              <p>
+                <strong>contact:</strong> +1 5144438594
               </p>
             </div>
           </div>
+            <form ref={form} onSubmit={sendEmail}>
           <div className="contact__data__form">
-            <input type="text" placeholder='name' />
-            <input type="email" placeholder='email' />
-            <textarea placeholder='message'></textarea>
-            <button>Send Message</button>
+            <input type="text" placeholder='name' required/>
+            <input type="email" placeholder='email' required />
+            <textarea name="message" placeholder='message' required></textarea>
+            <button type='submit'>Send Message</button>
           </div>
+            </form>
         </div>
       </motion.div>
     </Section>

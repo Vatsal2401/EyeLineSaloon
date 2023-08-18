@@ -14,18 +14,18 @@ function Services() {
 
   const data = [
     {
-      type: "Blowout",
-      text: "Shampoo and blow dry. If you are looking to celebrate your special day with us, please note we only have 3 stylists scheduled",
+      type: "Facials",
+      text: "Indulge in customized facials for a refreshed look. Choose from Signature Rejuvenation to Age-Defying Renewal, all designed to make your skin shine. Book your spot at EyeLineSolon now for a rejuvenating treat!",
       image: service1,
     },
     {
-      type: "Olaplex",
-      text: "Hair treatment helping keep coloured hair healthy from the inside If you are looking to celebrate your special day with us.",
+      type: "Waxing",
+      text: "Say goodbye to unwanted hair with our top-notch waxing treatments. From brows to legs, our skilled team ensures a comfortable and effective experience. Get ready to flaunt your smooth skin – schedule your waxing session at EyeLineSolon today! ",
       image: service2,
     },
     {
-      type: "Retouch",
-      text: "We bring to you a bouquet of services to remain worry free about your looks. We have made effortless beauty equipment and products.",
+      type: "Threading",
+      text: "Achieve flawless brows and facial hair with our expert threading techniques. Our trained specialists bring out your natural beauty while ensuring minimal discomfort. Embrace the art of precise threading at EyeLineSolon. Book your appointment now for beautifully defined features!",
       image: service3,
     },
   ];
@@ -51,7 +51,7 @@ function Services() {
                     <h2>{type}</h2>
                   </div>
                   <p className="services__service__description">{text}</p>
-                  <img src={play} alt="Readmore" />
+                  {/* <img src={play} alt="Readmore" /> */}
               </motion.div>
             )
           })}
