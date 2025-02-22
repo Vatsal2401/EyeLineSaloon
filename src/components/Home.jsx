@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import home from "assets/home.jpg";
-import play from "assets/play.png";
 import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { homeAnimation, homeInfoAnimation } from "animation";
